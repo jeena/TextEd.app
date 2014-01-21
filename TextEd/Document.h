@@ -8,6 +8,11 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface Document : NSDocument
+@interface Document : NSDocument {
+    NSAttributedString *stringModel;
+}
+
+@property (unsafe_unretained) IBOutlet NSTextView *textView;
+@property (nonatomic, readwrite) NSAttributedString *stringModel;
 
 @end
