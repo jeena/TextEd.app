@@ -32,7 +32,6 @@
 {
     [super windowControllerDidLoadNib:aController];
     [self.textView setFont:[NSFont userFixedPitchFontOfSize:[[NSUserDefaults standardUserDefaults] integerForKey:@"fontSize"]]];
-    // Add any code here that needs to be executed once the windowController has loaded the document's window.
 }
 
 + (BOOL)autosavesInPlace
